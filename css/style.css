@@ -37,42 +37,37 @@
         margin-top: 10px;
     }
 
-.image-container 
-{
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-}
+    .image-container 
+    {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+    }
 
-.image-container img 
-{
-  width: 100%;
-  height: 225px;
-  display: block;
-  object-fit: cover;
-}
+    .image-container img 
+    {
+      width: 100%;
+      height: 225px;
+      display: block;
+      object-fit: cover;
+    }
 
-/* the small 20x20 circular icon in the bottom-right corner */
-.corner-icon 
-{
-  position: absolute;
-  bottom: 40px;     /* distance from bottom edge of image */
-  right: 30px;      /* distance from right edge of image */
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: white;               /* white circle */
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.4); /* soft drop shadow */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.corner-icon i {
-  color: #729628;     /* icon color (green) */
-  font-size: 25px;    /* size fits nicely inside circle */
-}
-
+    .corner-icon 
+    {
+      position: absolute;
+      bottom: 40px;     
+      right: 30px; 
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;              
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #729628;     
+      font-size: 25px;  
+    }
 
     .overlay-text 
     {
@@ -86,176 +81,157 @@
     }
 
 
-.navbar {
-  background-color: #729628;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  display: grid;                        /* ✅ change from flex to grid */
-  grid-template-columns: repeat(5, 1fr);/* ✅ 5 even columns for icons */
-  align-items: center;
-  text-align: center;
-  z-index: 1000;
-}
+    .navbar 
+    {
+      background-color: #729628;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      display: grid;        
+      grid-template-rows: 1fr;               
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+      text-align: center;
+      z-index: 1000;
 
-.navbar i {
-  color: white;
-  font-size: 40px;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-}
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+      transition: transform 0.2s ease, color 0.2s ease;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
 
-.navbar i:hover {
-  color: #dce6cf;
-  transform: scale(1.2);
-}
+    .header-bg /*this layer helps the item cards appear to disappear when scrolling (its the only solution i though about). */
+    {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 190px;           
+      background-color: white;
+      z-index: 999;          
+    }
 
+    .header 
+    {
+      font-family: 'Open Sans', sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 40px 0px;         
+      z-index: 1000;        
+    }
 
-/* white background behind header + button */
-.header-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 190px;           /* covers 0–140px vertically */
-  background-color: white;
-  z-index: 999;            /* sits below header & button */
-}
-
-/* header text */
-.header {
-  font-family: 'Open Sans', sans-serif;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 40px 0;         /* vertically centers text */
-  z-index: 1000;           /* above the white background */
-  background-color: transparent; /* we already have white background */
-}
-
-/* green button */
-.add-item-btn {
-  position: fixed;
-  margin-top: 20px;
-  top: 90px;               /* inside the white area */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #729628;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  z-index: 1000;           /* above the white background */
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.add-item-btn:hover {
-  background-color: #88b34a;
-}
+    .add-item-btn 
+    {
+      position: fixed;
+      margin-top: 20px;
+      top: 90px;              
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #729628;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;          
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      background-color: #88b34a;
+    }
 
 
-.items-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* two cards side by side */
-  gap: 16px 12px;                       /* row gap, column gap */
-  padding: 210px 16px 100px;
-  justify-items: center;
-}
-
-/* Card style */
-.item-card {
-  position: relative;
-  background: #f8f9fa;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  overflow: hidden;
-  width: 100%;
-  max-width: 200px;
-  padding: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    .items-grid 
+    {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 16px 12px;                       
+      padding: 210px 16px 100px;
+      justify-items: center;
+    }
 
 
+    .item-card 
+    {
+      position: relative;
+      background: #f8f9fa;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+      width: 100%;
+      max-width: 200px;
+      padding: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
 
-.item-img {
-  width: 100%;
-  height: 50%;              /* ✅ takes up top 50% of the card */
-  object-fit: contain;      /* keeps image proportional, no stretching */
-  margin: 0;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
-}
+    .item-img 
+    {
+      width: 100%;
+      height: 50%;     
+      object-fit: contain; 
+      margin: 0;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+    }
 
-.item-body {
-  width: 100%;
-  padding: 2px;
-  font-family: 'Open San', sans-serif;
+    .item-body
+    {
+      width: 100%;
+      padding: 2px;
+      font-family: 'Open San', sans-serif;
+    }
+
+    .item-title 
+    {
+      margin-bottom: 2px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .item-exp 
+    {
+      font-size: 20px;
+      color: #729628;
+      font-weight: 600;
+      margin-left: 4px;
+    }
+
+    .item-qty 
+    {
+      margin-top: 20px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #222;
+    }
 
 
-}
-
-.item-title {
-  margin-bottom: 2px;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.item-exp {
-  font-size: 20px;
-}
-
-.item-exp .muted {
-  color: #729628;
-  font-weight: 600;
-}
-
-.item-exp .date {
-  color: #729628;
-  font-weight: 600;
-  margin-left: 4px;
-}
-
-.item-qty {
-  margin-top: 20px;
-  font-size: 30px;
-  font-weight: 500;
-  color: #222;
-}
-
-/* gear icon */
-.item-action {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: #fff;
-  border: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.item-action i {
-  color: #729628;
-  font-size: 13px;
-}
-
+    .item-action 
+    {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #729628;
+      font-size: 13px;
+    }
 
 }
