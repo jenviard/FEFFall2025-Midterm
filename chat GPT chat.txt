@@ -1,0 +1,74 @@
+FIGMA FILE: https://www.figma.com/design/RPto4v6xIJ6d3m1ksOBoSW/Untitled?node-id=0-1&t=RjiQ9WKZBG6oLfLi-1
+
+how do i get these little icons in my app (I add a photo of the nav bar from my figma file)
+
+CHAT SAID: 
+
+Perfect 👍 — you can add those small **icon buttons** to your green `.navbar` using free icon libraries such as **Font Awesome** or **Google Material Icons**.
+
+Here’s how to recreate the look in your screenshot step by step 👇
+
+---
+
+### ✅ **1. Add Font Awesome (recommended)**
+
+In your HTML `<head>`, add this line:
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+```
+
+---
+
+### ✅ **2. HTML for the Navbar**
+
+```html
+<div class="navbar">
+  <i class="fa-solid fa-house"></i>
+  <i class="fa-solid fa-user"></i>
+  <i class="fa-solid fa-camera"></i>
+  <i class="fa-solid fa-list"></i>
+  <i class="fa-solid fa-plus"></i>
+</div>
+```
+
+---
+
+### ✅ **3. CSS Styling**
+
+```css
+.navbar {
+  background-color: #729628;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around; /* evenly spaces icons */
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar i {
+  color: white;          /* icon color */
+  font-size: 22px;       /* icon size */
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.navbar i:hover {
+  color: #dce6cf;        /* lighter green on hover */
+  transform: scale(1.2); /* small grow effect */
+}
+```
+
+---
+
+✅ **Result:**
+
+* The icons appear **centered and evenly spaced** across your fixed green navbar.
+* They stay at the **bottom of the screen** at all times.
+* Each icon slightly enlarges and brightens when hovered.
+
+Would you like me to show how to make the icons **clickable links** (e.g., home, profile, camera pages)?

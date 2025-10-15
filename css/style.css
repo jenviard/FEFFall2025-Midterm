@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-@media only screen and (device-width:430px) and (device-height:932px) and (-webkit-device-pixel-ratio:3) 
+/* IPHONE 14 PRO MAX*/
+@media only screen and (device-width:430px) and (device-height:932px) 
 {
     body
     {
@@ -37,22 +38,22 @@
         margin-top: 10px;
     }
 
-    .image-container 
+    .image
     {
       position: relative;
       width: 100%;
       max-width: 600px;
     }
 
-    .image-container img 
+    .image img 
     {
       width: 100%;
-      height: 225px;
+      height: 20px;
       display: block;
       object-fit: cover;
     }
 
-    .corner-icon 
+    .cornerIcon 
     {
       position: absolute;
       bottom: 40px;     
@@ -69,7 +70,7 @@
       font-size: 25px;  
     }
 
-    .overlay-text 
+    .overlayText 
     {
         position: absolute;
         top: 40px;
@@ -103,7 +104,7 @@
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
     }
 
-    .header-bg /*this layer helps the item cards appear to disappear when scrolling (its the only solution i though about). */
+    .headerBackground /*this layer helps the item cards appear to disappear when scrolling (its the only solution i though about). */
     {
       position: fixed;
       top: 0;
@@ -128,7 +129,7 @@
       z-index: 1000;        
     }
 
-    .add-item-btn 
+    .addItem 
     {
       position: fixed;
       margin-top: 20px;
@@ -150,7 +151,7 @@
     }
 
 
-    .items-grid 
+    .kitchenInv 
     {
       display: grid;
       grid-template-columns: repeat(2, 1fr); 
@@ -160,7 +161,7 @@
     }
 
 
-    .item-card 
+    .item
     {
       position: relative;
       background: #f8f9fa;
@@ -176,7 +177,7 @@
     }
 
 
-    .item-img 
+    .itemImage 
     {
       width: 100%;
       height: 50%;     
@@ -185,21 +186,21 @@
       filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
     }
 
-    .item-body
+    .itemInfo
     {
       width: 100%;
       padding: 2px;
       font-family: 'Open San', sans-serif;
     }
 
-    .item-title 
+    .itemName
     {
       margin-bottom: 2px;
       font-size: 25px;
       font-weight: bold;
     }
 
-    .item-exp 
+    .itemDate
     {
       font-size: 20px;
       color: #729628;
@@ -207,7 +208,7 @@
       margin-left: 4px;
     }
 
-    .item-qty 
+    .itemAmount
     {
       margin-top: 20px;
       font-size: 30px;
@@ -216,11 +217,248 @@
     }
 
 
-    .item-action 
+    .itemEdit
     {
       position: absolute;
       right: 10px;
       bottom: 10px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #729628;
+      font-size: 13px;
+    }
+
+}
+
+/* FOR IPAD PRO*/
+
+@media only screen and (device-width:1024px) and (device-height:1366px) 
+{
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    .youhavefoodathome 
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        width: 100%; 
+    }
+
+    .youhavefoodathome > :first-child 
+    {
+        background-color: #729628;
+        font-size: 40px;
+        font-family: 'Open San', sans-serif;
+        color: white;
+        padding-left: 5px; 
+    }
+
+    .homeselects
+    {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .image
+    {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .image img 
+    {
+      width: 100%;
+      height: 325px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .cornerIcon 
+    {
+      position: absolute;
+      bottom: 40px;     
+      right: 30px; 
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: white;              
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #729628;     
+      font-size: 50px;  
+    }
+
+    .overlayText 
+    {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        color: white;
+        font-size: 120px;
+        font-family: 'Open San', sans-serif;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+
+    .navbar 
+    {
+      background-color: #729628;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 175px;
+      display: grid;        
+      grid-template-rows: 1fr;               
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+      text-align: center;
+      z-index: 1000;
+
+      color: white;
+      font-size: 80px;
+      cursor: pointer;
+      transition: transform 0.2s ease, color 0.2s ease;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .headerBackground /*this layer helps the item cards appear to disappear when scrolling (its the only solution i though about). */
+    {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 280px;           
+      background-color: white;
+      z-index: 999;          
+    }
+
+    .header 
+    {
+      font-family: 'Open San', sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      padding: 45px 0px;         
+      z-index: 1000;        
+    }
+
+    .addItem
+    {
+      position: fixed;
+      margin-top: 10px;
+      top: 180px;              
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #729628;
+      color: white;
+      font-size: 36px;
+      font-weight: 600;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;          
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      background-color: #88b34a;
+    }
+
+
+    .kitchenInv 
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      gap: 16px 12px;                       
+      padding: 270px 16px 100px;
+      justify-items: center;
+    }
+
+
+    .item
+    {
+      position: relative;
+      background: #f8f9fa;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+      width: 100%;
+      max-width: 200px;
+      padding: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .itemImage
+    {
+      width: 100%;
+      height: 50%;     
+      object-fit: contain; 
+      margin: 0;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+    }
+
+    .itemInfo
+    {
+      width: 100%;
+      padding: 2px;
+      font-family: 'Open San', sans-serif;
+    }
+
+    .itemName
+    {
+      margin-bottom: 2px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .itemDate
+    {
+      font-size: 25px;
+      color: #729628;
+      font-weight: 600;
+      margin-left: 2px;
+    }
+
+    .itemAmount 
+    {
+      margin-top: 40px;
+      font-size: 35px;
+      font-weight: 500;
+      color: #222;
+    }
+
+
+    .itemEdit
+    {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
       width: 26px;
       height: 26px;
       border-radius: 50%;
