@@ -235,6 +235,69 @@
       font-size: 13px;
     }
 
+
+    .clickBox
+    {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttonStyle
+    {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 1.0s ease;
+    }
+
+    .buttonStyle:hover 
+    {
+        background-color: #45a049;
+        transition: background-color 1.0s ease;
+    }
+
+    .showHideContainer 
+    {
+        width: 300px;
+        height: 150px;
+        background-color: lightgray;
+        margin-top: 10px;
+        display: block;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: opacity 0.5s ease;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .showHideContainer.hide 
+    {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease;
+    }
+
+    .imageGallery img 
+    {
+      display: block;
+      width: 100%;     
+      height: auto;
+    }
+
+    .imageGallery 
+    {
+      align-items: left;
+      margin: 0;
+      margin-top: 150px;
+      padding: 0;
+    }
+
 }
 
 /* FOR IPAD PRO*/
@@ -470,6 +533,67 @@
       justify-content: center;
       color: #729628;
       font-size: 13px;
+    }
+
+    .clickBox
+    {
+      width: 200px;
+      height: 200px;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttonStyle
+    {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 1.0s ease;
+    }
+
+    .buttonStyle:hover 
+    {
+        background-color: #45a049;
+        transition: background-color 1.0s ease;
+    }
+
+    .showHideContainer 
+    {
+        width: 300px;
+        height: 150px;
+        background-color: lightgray;
+        margin-top: 10px;
+        display: block;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: opacity 0.5s ease;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .showHideContainer.hide 
+    {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease;
+    }
+
+    .imageGallery img 
+    {
+      display: block;
+      width: 100%;     
+      height: auto;
+    }
+
+    .imageGallery 
+    {
+      align-items: left;
+      margin: 0;
+      margin-top: 190px;
+      padding: 0;
     }
 
 }
