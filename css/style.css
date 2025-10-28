@@ -62,7 +62,7 @@
       height: 50px;
       border-radius: 50%;
       background-color: white;              
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+      box-shadow: 0px 2px 6px black;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -78,7 +78,7 @@
         color: white;
         font-size: 65px;
         font-family: 'Open San', sans-serif;
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        text-shadow: 2px 2px 6px black;
     }
 
 
@@ -100,8 +100,7 @@
       color: white;
       font-size: 40px;
       cursor: pointer;
-      transition: transform 0.2s ease, color 0.2s ease;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      text-shadow: 2px 2px 6px black;
     }
 
     .headerBackground /*this layer helps the item cards appear to disappear when scrolling (its the only solution i though about). */
@@ -135,7 +134,6 @@
       margin-top: 20px;
       top: 90px;              
       left: 50%;
-      transform: translateX(-50%);
       background-color: #729628;
       color: white;
       font-size: 18px;
@@ -143,10 +141,8 @@
       border: none;
       border-radius: 25px;
       padding: 10px 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
+      box-shadow: 0 4px 8px black;
       z-index: 1000;          
-      transition: background-color 0.2s ease, transform 0.2s ease;
       background-color: #88b34a;
     }
 
@@ -154,7 +150,7 @@
     .kitchenInv 
     {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); 
+      grid-template-columns: 1fr 1fr; 
       gap: 16px 12px;                       
       padding: 210px 16px 100px;
       justify-items: center;
@@ -164,9 +160,9 @@
     .item
     {
       position: relative;
-      background: #f8f9fa;
+      background: white;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px black;
       overflow: hidden;
       width: 100%;
       max-width: 200px;
@@ -183,7 +179,7 @@
       height: 50%;     
       object-fit: contain; 
       margin: 0;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+      filter: drop-shadow(0 2px 4px black);
     }
 
     .itemInfo
@@ -213,7 +209,7 @@
       margin-top: 20px;
       font-size: 30px;
       font-weight: 500;
-      color: #222;
+      color: black;
     }
 
 
@@ -225,9 +221,9 @@
       width: 26px;
       height: 26px;
       border-radius: 50%;
-      background-color: #fff;
+      background-color: white;
       border: none;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 5px black;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -241,7 +237,6 @@
       width: 200px;
       height: 200px;
       background-color: red;
-      transition: background-color 0.3s ease;
     }
 
     .buttonStyle
@@ -253,34 +248,11 @@
         color: white;
         border: none;
         border-radius: 5px;
-        transition: background-color 1.0s ease;
     }
 
     .buttonStyle:hover 
     {
         background-color: #45a049;
-        transition: background-color 1.0s ease;
-    }
-
-    .showHideContainer 
-    {
-        width: 300px;
-        height: 150px;
-        background-color: lightgray;
-        margin-top: 10px;
-        display: block;
-        padding: 10px;
-        box-sizing: border-box;
-        transition: opacity 0.5s ease;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .showHideContainer.hide 
-    {
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.5s ease;
     }
 
     .imageGallery img 
@@ -362,7 +334,7 @@
       height: 100px;
       border-radius: 50%;
       background-color: white;              
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+      box-shadow: 0px 2px 6px black;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -378,7 +350,7 @@
         color: white;
         font-size: 120px;
         font-family: 'Open San', sans-serif;
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        text-shadow: 2px 2px 6px black;
     }
 
 
@@ -400,8 +372,7 @@
       color: white;
       font-size: 80px;
       cursor: pointer;
-      transition: transform 0.2s ease, color 0.2s ease;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      text-shadow: 2px 2px 6px black;
     }
 
     .headerBackground /*this layer helps the item cards appear to disappear when scrolling (its the only solution i though about). */
@@ -425,7 +396,7 @@
       text-align: center;
       font-size: 48px;
       font-weight: bold;
-      padding: 45px 0px;         
+      padding: 45px;         
       z-index: 1000;        
     }
 
@@ -443,10 +414,9 @@
       border: none;
       border-radius: 25px;
       padding: 10px 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 8px black;
       cursor: pointer;
       z-index: 1000;          
-      transition: background-color 0.2s ease, transform 0.2s ease;
       background-color: #88b34a;
     }
 
@@ -464,9 +434,9 @@
     .item
     {
       position: relative;
-      background: #f8f9fa;
+      background: white;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px black;
       overflow: hidden;
       width: 100%;
       max-width: 200px;
@@ -483,7 +453,7 @@
       height: 50%;     
       object-fit: contain; 
       margin: 0;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+      filter: drop-shadow(0 2px 4px black);
     }
 
     .itemInfo
@@ -513,7 +483,7 @@
       margin-top: 40px;
       font-size: 35px;
       font-weight: 500;
-      color: #222;
+      color: black;
     }
 
 
@@ -527,7 +497,7 @@
       border-radius: 50%;
       background-color: #fff;
       border: none;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 5px black;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -539,7 +509,6 @@
     {
       width: 200px;
       height: 200px;
-      transition: background-color 0.3s ease;
     }
 
     .buttonStyle
@@ -551,35 +520,14 @@
         color: white;
         border: none;
         border-radius: 5px;
-        transition: background-color 1.0s ease;
     }
 
     .buttonStyle:hover 
     {
         background-color: #45a049;
-        transition: background-color 1.0s ease;
     }
 
-    .showHideContainer 
-    {
-        width: 300px;
-        height: 150px;
-        background-color: lightgray;
-        margin-top: 10px;
-        display: block;
-        padding: 10px;
-        box-sizing: border-box;
-        transition: opacity 0.5s ease;
-        opacity: 1;
-        visibility: visible;
-    }
 
-    .showHideContainer.hide 
-    {
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.5s ease;
-    }
 
     .imageGallery img 
     {
