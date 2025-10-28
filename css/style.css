@@ -232,13 +232,6 @@
     }
 
 
-    .clickBox
-    {
-      width: 200px;
-      height: 200px;
-      background-color: red;
-    }
-
     .buttonStyle
     {
         padding: 10px 20px;
@@ -250,10 +243,6 @@
         border-radius: 5px;
     }
 
-    .buttonStyle:hover 
-    {
-        background-color: #45a049;
-    }
 
     .imageGallery img 
     {
