@@ -493,12 +493,6 @@
       font-size: 13px;
     }
 
-    .clickBox
-    {
-      width: 200px;
-      height: 200px;
-    }
-
     .buttonStyle
     {
         padding: 10px 20px;
@@ -509,14 +503,7 @@
         border: none;
         border-radius: 5px;
     }
-
-    .buttonStyle:hover 
-    {
-        background-color: #45a049;
-    }
-
-
-
+    
     .imageGallery img 
     {
       display: block;
